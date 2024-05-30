@@ -13,6 +13,7 @@ export default {
         }
     },
     methods: {
+
         callAPI(url) {
             axios
                 .get(url)
