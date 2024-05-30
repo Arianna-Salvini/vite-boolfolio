@@ -1,9 +1,11 @@
 <script>
-
+export default {
+  name: 'AppFooter',
+};
 </script>
 
 <template>
-  <h1>Hello Everybody</h1>
+  <h1>Footer</h1>
 
 </template>
 
