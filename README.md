@@ -15,3 +15,12 @@ Utilizziamo questo componente per visualizzare tutti i progetti ricevuti tramite
 
 ### Bonus:
 Gestire la paginazione dei risultati
+
+# Descrizione 2:
+proseguite con il boolfolio ed implementate quanto visto a lezione:
+
+- Installazione di vue router
+- Creazione router.js
+- Importazione del file router.js in main.js
+- Utilizzo del plugin router sull'istanza vue creata
+- Realizzazione pagine home, projects, about, contacts
