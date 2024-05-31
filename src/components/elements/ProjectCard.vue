@@ -21,7 +21,7 @@ export default {
 <template>
     <div class="card">
         <template v-if="project.image.startsWith('uploads')">
-            <img :src="state.url_API + '/storage/' + project.image" alt="">
+            <img width="200" :src="state.url_API + 'storage/' + project.image" alt="">
         </template>
         <template v-else>
             <img :src="project.image" alt="">
@@ -35,4 +35,4 @@ export default {
     </div>
 </template>
 
-<style></style>
+<style scoped></style>
