@@ -19,7 +19,7 @@ export default {
 </script>
 
 <template>
-  <div class="container">
+  <div class="container my-5">
 
     <div class="row" v-if="!loading">
       <div class="col" v-for="project in projects.data">
@@ -36,4 +36,4 @@ export default {
   </div>
 </template>
 
-<style></style>
+<style scoped></style>

@@ -19,14 +19,17 @@ export default {
 </script>
 
 <template>
-    <div class="card">
-        <template v-if="project.image.startsWith('uploads')">
-            <img width="200" :src="state.url_API + 'storage/' + project.image" alt="">
-        </template>
-        <template v-else>
-            <img :src="project.image" alt="">
-        </template>
+    <div class="card h-100 gap-2">
+        <div class="card-top">
 
+            <template v-if="project.image.startsWith('uploads')">
+                <img width="200" :src="state.url_API + 'storage/' + project.image" alt="">
+            </template>
+            <template v-else>
+                <img width="200" :src="project.image" alt="">
+            </template>
+
+        </div>
         <div class="card-body">
             <h3>
                 {{ project.title }}
