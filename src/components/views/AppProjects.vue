@@ -41,21 +41,25 @@ export default {
 </script>
 
 <template>
-  <div class="container my-5">
+  <section>
+    <div class="container my-5 h-100">
 
-    <div class="row" v-if="!loading">
-      <div class="col" v-for="project in projects.data">
+      <div class="row" v-if="!loading">
+        <div class="col" v-for="project in projects.data">
+          <router-link :to="{ name: 'project-view', params: { slug: project.slug } }">
 
-        <ProjectCard :project="project" />
+            <ProjectCard :project="project" />
+          </router-link>
 
+        </div>
+      </div>
+      <div class="row" v-else>
+        <div class="col">
+          Loading ...
+        </div>
       </div>
     </div>
-    <div class="row" v-else>
-      <div class="col">
-        Loading ...
-      </div>
-    </div>
-  </div>
+  </section>
 </template>
 
 <style scoped></style>
