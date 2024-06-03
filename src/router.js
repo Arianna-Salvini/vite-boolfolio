@@ -5,8 +5,7 @@ import AppHome from "./components/views/AppHome.vue";
 import AppAbout from "./components/views/AppAbout.vue";
 import AppProjects from './components/views/AppProjects.vue';
 import AppContacts from "./components/views/AppContacts.vue";
-
-
+import ProjectView from './components/views/ProjectView.vue';
 
 const router = createRouter({
     history: createWebHistory(),
@@ -30,8 +29,14 @@ const router = createRouter({
             path: '/contacts',
             name: 'contacts',
             component: AppContacts
+        },
+        {
+            path: '/projects/:slug',
+            name: 'project-view',
+            component: ProjectView
         }
     ]
+
 })
 
 
