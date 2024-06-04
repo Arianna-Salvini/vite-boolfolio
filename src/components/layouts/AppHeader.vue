@@ -48,5 +48,8 @@ export default {
   font-size: 1.5rem;
 }
 
-.main_menu {}
+.main_menu {
+  margin: 1rem;
+  height: 2rem;
+}
 </style>
