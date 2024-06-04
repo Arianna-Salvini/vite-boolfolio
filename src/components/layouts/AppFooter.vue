@@ -5,8 +5,20 @@ export default {
 </script>
 
 <template>
-  <h1>Footer</h1>
+  <footer>
+    <h2>Footer</h2>
+  </footer>
 
 </template>
 
-<style></style>
+<style scoped>
+footer {
+  height: 2rem;
+  margin: 0;
+
+  h2 {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+</style>
