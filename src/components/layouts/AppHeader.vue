@@ -31,7 +31,7 @@ export default {
 
     <div class="container d-flex justify-content-between align-items-center">
       <div>
-        <h3 class="logo">Arianna Salvini</h3>
+        <h3 class="logo_AS">Arianna Salvini</h3>
       </div>
 
       <div>
@@ -44,7 +44,7 @@ export default {
 </template>
 
 <style scoped>
-.logo {
+.logo_AS {
   font-size: 1.5rem;
 }
 

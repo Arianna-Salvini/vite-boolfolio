@@ -42,7 +42,7 @@ export default {
 
 <template>
   <section>
-    <div class="container my-5 h-100">
+    <div class="container py-5">
 
       <div class="row" v-if="!loading">
         <div class="col" v-for="project in projects.data">
