@@ -28,8 +28,13 @@ export default {
         getProjectView(url) {
             axios.get(url)
                 .then(response => {
-                    this.project = response.data;
-                    this.loading = false;
+                    if (response.data.success) {
+                        this.project = response.data;
+                        this.loading = false;
+
+                    } else {
+                        this.$router.push({ name: 'not-found' })
+                    }
                 })
                 .catch(err => {
                     console.error(err);
