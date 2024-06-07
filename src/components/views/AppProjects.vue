@@ -42,8 +42,10 @@ export default {
 
 <template>
   <section>
-    <div class="container py-5">
-
+    <div class="container py-5 text-center p-5">
+      <h2 class="text_neon">
+        < Project />
+      </h2>
       <div class="row" v-if="!loading">
         <div class="col" v-for="project in projects.data">
           <router-link :to="{ name: 'project-view', params: { slug: project.slug } }">
