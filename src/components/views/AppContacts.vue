@@ -8,12 +8,8 @@
             <form action="post" class="d-flex flex-column justify-content-center align-items-center gap-4">
                 <div class="d-flex ">
                     <div class="d-flex flex-column flex-grow-1">
-                        <label for="name" class="pe-3 ">Input your name here </label>
-                        <input type="text" name="name" id="name">
-                    </div>
-                    <div class="d-flex flex-column px-3 flex-grow-1">
-                        <label for="lastname" class="pe-3">Input your Lastame here </label>
-                        <input type="text" last_name="lastname" id="lastname">
+                        <label for="name" class="pe-3 ">Insert here your fullname </label>
+                        <input type="text" name="name" id="name" placeholder="Mario Rossi">
                     </div>
                 </div>
                 <div class="d-flex flex-column flex-grow-1">
